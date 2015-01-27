@@ -1,0 +1,29 @@
+int R = 0;
+int G = 0;
+int B = 255;
+int rect_h = 10;
+int rect_w = 10;
+
+void setup () {
+  size (600,400);
+  background (255); 
+}
+
+void draw () {
+strokeWeight(0);
+  fill (R,G,B);
+  rect (pmouseX,pmouseY,rect_h,rect_w);
+  
+if (mousePressed) {
+  rect_h = rect_h + 1;
+  rect_w = rect_w + 1;
+  R = R + 5;
+  G = G + 1;
+  B = B - 1;
+}
+
+if (keyPressed) {
+  background (255);
+}
+
+}
