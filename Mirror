@@ -1,0 +1,24 @@
+int ellipse_h = 5;
+int ellipse_w = 5;
+void setup () {
+  size (400,400);
+  background (139,205,211);
+}
+void draw() {
+  if (mousePressed) {
+  stroke (0,0,100);
+  fill (0,0,50);
+  ellipse (pmouseX,pmouseY,ellipse_h,ellipse_w);
+  ellipse (pmouseX+50,pmouseY+0,ellipse_h,ellipse_w);
+
+  stroke (0,50,500);
+  fill (0,80,50);
+  ellipse (pmouseY,pmouseX,ellipse_h,ellipse_w);
+  ellipse (pmouseY+0,pmouseX+50,ellipse_h,ellipse_w);
+
+}
+}
+
+void keyPressed () {
+  background (139,205,211);
+}
