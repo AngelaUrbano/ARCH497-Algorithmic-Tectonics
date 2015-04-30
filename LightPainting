@@ -1,0 +1,32 @@
+MODULE Module1
+	CONST robtarget Target_10:=[[928.61214857,0,1412.499981377],[0.49999989,0,0.866025467,0],[0,0,0,0],[9E9,9E9,9E9,9E9,9E9,9E9]];
+	!CONST robtarget Target_10:=[[728.61214857,0,1412.499981377],[0.49999989,0,0.866025467,0],[0,0,0,0],[9E9,9E9,9E9,9E9,9E9,9E9]];
+    CONST robtarget Target_30:=[[1300,-40,1000],[0.49999989,0,0.866025467,0],[0,-1,0,0],[9E9,9E9,9E9,9E9,9E9,9E9]];
+    CONST robtarget Target_20:=[[1300,450,1150],[0.49999989,0,0.866025467,0],[0,-1,0,0],[9E9,9E9,9E9,9E9,9E9,9E9]];
+    CONST robtarget Target_40:=[[1300,460,850],[0.49999989,0,0.866025467,0],[0,-1,0,0],[9E9,9E9,9E9,9E9,9E9,9E9]];
+    CONST robtarget Target_50:=[[1300,-40,700],[0.49999989,0,0.866025467,0],[0,-1,0,0],[9E9,9E9,9E9,9E9,9E9,9E9]];
+    CONST robtarget Target_60:=[[1300,560,650],[0.49999989,0,0.866025467,0],[0,0,-1,0],[9E9,9E9,9E9,9E9,9E9,9E9]];
+    CONST robtarget Target_70:=[[1300,-40,600],[0.49999989,0,0.866025467,0],[0,0,-1,0],[9E9,9E9,9E9,9E9,9E9,9E9]];
+    CONST robtarget Target_80:=[[1300,560,550],[0.49999989,0,0.866025467,0],[0,0,-1,0],[9E9,9E9,9E9,9E9,9E9,9E9]];
+    CONST robtarget Target_90:=[[1300,-140,500],[0.49999989,0,0.866025467,0],[0,0,-1,0],[9E9,9E9,9E9,9E9,9E9,9E9]];
+    CONST robtarget Target_100:=[[1300,710,450],[0.49999989,0,0.866025467,0],[0,0,-1,0],[9E9,9E9,9E9,9E9,9E9,9E9]];
+    CONST robtarget Home_Pos:=[[928.61214857,0,1412.499981377],[0.49999989,0,0.866025467,0],[0,0,0,0],[9E9,9E9,9E9,9E9,9E9,9E9]];
+    
+    PROC main()
+	    Path_10;
+	ENDPROC
+    
+	PROC Path_10()
+	    Movej Home_Pos,v1000,z100,tool0\WObj:=wobj0;
+	    MoveL Target_20,v1000,z100,tool0\WObj:=wobj0;
+        MoveJ Target_30,v1000,z100,tool0\WObj:=wobj0;
+        MoveL Target_40,v1000,z100,tool0\WObj:=wobj0;
+        MoveJ Target_50,v1000,z100,tool0\WObj:=wobj0;
+        MoveL Target_60,v1000,z100,tool0\WObj:=wobj0;
+        MoveJ Target_70,v1000,z100,tool0\WObj:=wobj0;
+        MoveL Target_80,v1000,z100,tool0\WObj:=wobj0;
+        MoveJ Target_90,v1000,z100,tool0\WObj:=wobj0;
+        MoveL Target_100,v1000,z100,tool0\WObj:=wobj0;
+	ENDPROC
+	
+ENDMODULE
